@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+
+@font-face {
+    font-family: 'Universal Sans Display 380';
+    src: url('/dist/fonts/UniversalSansDisplay-380.woff2') format('woff2'),
+         url('/dist/fonts/UniversalSansDisplay-380.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+  font-family: 'Items';
+  src: url('/dist/fonts/Items-Light.woff2') format('woff2'), 
+       url('/dist/fonts/Items-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

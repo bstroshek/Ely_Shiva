@@ -1,0 +1,31 @@
+{
+  "name": "irina-home-page",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css",
+    "build:sass": "sass ./src/custom.sass ./dist/custom.css --watch",
+    "watch:custom": "sass ./src/custom.sass ./dist/custom.css --watch",
+    "watch:tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --watch",
+    "dev:styles": "concurrently \"npm run watch:custom\" \"npm run watch:tailwind\" \"npm run dev\""
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.15",
+    "vite": "^6.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.15",
+    "concurrently": "^9.1.2",
+    "sass": "^1.86.0",
+    "tailwindcss": "^4.0.15"
+  }
+}
